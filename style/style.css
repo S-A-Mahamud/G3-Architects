@@ -1,0 +1,155 @@
+/* Work Sans Font cdn */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root variables */
+:root {
+    --primary-color: #FF900E;
+    --bg-color: rgba(255, 144, 14, 0.1);
+    --dark-1-color: rgb(19, 19, 19);
+    --dark-2-color: rgb(66, 66, 66);
+    --dark-3-color: rgb(114, 114, 114);
+}
+
+/* Container size */
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+}
+
+/* shared styles */
+.display-flex {
+    display: flex;
+}
+
+.btn {
+    padding: 20px 25px;
+    background-color:var(--primary-color);
+    color: white;
+    font-weight: bold;
+    border: none;
+    text-decoration: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Header styles */
+header {
+    background-color: var(--bg-color);
+}
+
+/* Navigation container styles */
+.nav-container {
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.nav-container h1 {
+    color: var(--dark-1-color);
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    justify-content: center;
+    gap: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--dark-2-color);
+    font-weight: bold;
+    font-size: 1.1rem;
+    
+}
+
+/* Hero section styles */
+.hero-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 102px 0 45px 0;
+}
+
+.display-block {
+    display: block;
+}
+
+.hero-container h2 {
+    font-size: 4rem;
+    color: var(--dark-1-color);
+    font-weight: 700;
+}
+
+.hero-container p {
+    color: var(--dark-3-color);
+    margin: 32px auto;
+    max-width: 868px;
+}
+
+.hero-container  img {
+    margin-top: 45px;
+    width: 100%;
+}
+
+/* Team section styles */
+.team-container {
+    justify-content: center;
+    align-items: center;
+    gap: 73px;
+    margin: 85px auto 130px;
+    padding: 0 50px;
+}
+
+/* team img container styles */
+.img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    /* margin-top: 60px; */
+}
+
+.img-container img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+/* Team text container styles */
+.team-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.title-muted {
+    color: var(--dark-3-color);
+}
+
+.title-main {
+    color: var(--dark-1-color);
+}
+
+.title-highlight {
+    color: var(--primary-color);
+}
+
+.team-container p{
+    color: var(--dark-3-color);
+    margin: 24px 0 32px;
+    max-width: 537px;
+}
