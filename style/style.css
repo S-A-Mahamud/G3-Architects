@@ -298,6 +298,18 @@ nav ul li a {
     filter: grayscale(100%);
 }
 
+/* Footer styles */
+footer{
+    background-color: var(--bg-color);
+    border-radius: 8px;
+}
+
+.copyright-footer {
+    margin: 130px 0px 20px;
+    text-align: center;
+    padding: 39px 0;
+}
+
 
 
 /* md device responsive */
